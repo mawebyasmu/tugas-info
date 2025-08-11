@@ -14,7 +14,7 @@ export const Navigation = ({ activeSection, onSectionChange }: NavigationProps) 
     { id: "home", label: "Home", emoji: "🏠" },
     { id: "informatika", label: "Informatika & Kemampuan Umum", emoji: "💻" },
     { id: "berpikir", label: "Berpikir Komputasional", emoji: "🧠" },
-    { id: "kuis", label: "Kuis Total", emoji: "🏆" },
+    { id: "kuis", label: "Kuis", emoji: "🏆" },
   ];
 
   const handleItemClick = (sectionId: string) => {
