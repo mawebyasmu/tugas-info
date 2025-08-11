@@ -355,29 +355,29 @@ export const InteractiveQuiz = () => {
           )}
           
           {isSubmitted && (
-            <div className="space-y-4">
-              <div className={`p-4 rounded-lg border-2 ${
-                // Check if answer is correct for feedback display
-                (() => {
-                  if (question.type === 'fill-blank') {
-                    const userAnswers = userAnswer?.map((ans: string) => ans.toLowerCase().trim()) || [];
-                    const correctAnswers = question.correctAnswer as string[];
-                    return userAnswers.length === correctAnswers.length && 
-                           userAnswers.every((ans: string, idx: number) => ans === correctAnswers[idx]);
-                  } else if (question.type === 'matching') {
-                    return Array.isArray(userAnswer) && userAnswer.length === 3;
-                  } else {
-                    return userAnswer === question.correctAnswer;
-                  }
-                })() ? 'quiz-correct' : 'quiz-incorrect'
-              }`}>
+            <div className={(() => {
+              if (question.type === 'fill-blank') {
+                const userAnswers = userAnswer?.map((ans: string) => ans.toLowerCase().trim()) || [];
+                const correctAnswers = question.correctAnswer as string[];
+                return userAnswers.length === correctAnswers.length && userAnswers.every((ans: string, idx: number) => ans === correctAnswers[idx])
+                  ? 'quiz-correct p-4 rounded-lg border-2'
+                  : 'quiz-feedback-wrong';
+                } else if (question.type === 'matching') {
+                  return Array.isArray(userAnswer) && userAnswer.length === 3
+                    ? 'quiz-correct p-4 rounded-lg border-2'
+                    : 'quiz-feedback-wrong';
+                } else {
+                  return userAnswer === question.correctAnswer
+                    ? 'quiz-correct p-4 rounded-lg border-2'
+                    : 'quiz-feedback-wrong';
+                }
+              })()}>
                 <p className="font-semibold">
                   {(() => {
                     if (question.type === 'fill-blank') {
                       const userAnswers = userAnswer?.map((ans: string) => ans.toLowerCase().trim()) || [];
                       const correctAnswers = question.correctAnswer as string[];
-                      const isCorrect = userAnswers.length === correctAnswers.length && 
-                                       userAnswers.every((ans: string, idx: number) => ans === correctAnswers[idx]);
+                      const isCorrect = userAnswers.length === correctAnswers.length && userAnswers.every((ans: string, idx: number) => ans === correctAnswers[idx]);
                       return isCorrect ? question.feedback.correct : question.feedback.incorrect;
                     } else if (question.type === 'matching') {
                       const isCorrect = Array.isArray(userAnswer) && userAnswer.length === 3;
@@ -388,27 +388,46 @@ export const InteractiveQuiz = () => {
                   })()}
                 </p>
               </div>
-              
-              <div className="flex gap-3 justify-between">
-                <Button
-                  onClick={handlePrevious}
-                  disabled={currentQuestion === 0}
-                  variant="outline"
-                  className="flex-1"
-                >
-                  ← Previous
-                </Button>
-                <Button
-                  onClick={handleNext}
-                  className="btn-hero flex-1"
-                >
-                  {isLastQuestion ? "Lihat Hasil 🏆" : "Next →"}
-                </Button>
-              </div>
-            </div>
           )}
         </div>
       </CardContent>
     </Card>
   );
 };
+                                                                                      
+const [studentName, setStudentName] = useState("");
+const [studentClass, setStudentClass] = useState("");
+
+{showResults && (
+  <div className="mt-8 space-y-4">
+    <input
+      type="text"
+      placeholder="Nama Lengkap"
+      value={studentName}
+      onChange={e => setStudentName(e.target.value)}
+      required
+      className="input input-bordered w-full"
+    />
+    <input
+      type="text"
+      placeholder="Kelas (misal: X-1)"
+      value={studentClass}
+      onChange={e => setStudentClass(e.target.value)}
+      required
+      className="input input-bordered w-full"
+    />
+    <button
+      className="btn btn-success w-full"
+      disabled={!studentName || !studentClass}
+      onClick={() => {
+        const waNumber = "6285785377790";
+        const waText = encodeURIComponent(
+          `Nama: ${studentName}\nKelas: ${studentClass}\nSkor: ${totalScore}/${maxScore}\nJawaban: ${JSON.stringify(answers, null, 2)}`
+        );
+        window.open(`https://wa.me/${waNumber}?text=${waText}`);
+      }}
+    >
+      Kirim ke WhatsApp Guru
+    </button>
+  </div>
+)}

@@ -197,7 +197,14 @@ const Index = () => {
       emoji: "🧩",
       content: `
         <p><strong>4 Elemen Super Power buat solve masalah kayak programmer! 🦸‍♂️</strong></p>
-        
+        <p>Berpikir komputasional adalah cara berpikir untuk menyelesaikan masalah secara efisien, efektif, dan optimal sesuai logika informatika. Siswa dilatih untuk memecahkan masalah dengan membaginya menjadi bagian-bagian kecil agar lebih mudah diselesaikan.</p>
+        <ul class="list-disc list-inside space-y-1 mt-2">
+          <li><strong>Dekomposisi:</strong> Memecah masalah besar menjadi bagian kecil. <br/>Contoh: Membuat jadwal belajar harian, pecah jadi: tentukan pelajaran, waktu belajar, waktu istirahat.</li>
+          <li><strong>Pengenalan Pola:</strong> Mencari pola dari masalah yang sudah dipecah. <br/>Contoh: Setiap hari ada pelajaran utama dan waktu istirahat, pola ini bisa diterapkan ke jadwal lain.</li>
+          <li><strong>Abstraksi:</strong> Mengambil inti masalah dan mengabaikan detail yang tidak penting. <br/>Contoh: Fokus pada urutan pelajaran dan waktu, abaikan warna tabel atau font.</li>
+          <li><strong>Desain Algoritma:</strong> Membuat langkah-langkah solusi yang jelas dan sistematis. <br/>Contoh: Buat tabel jadwal, tentukan urutan pelajaran, dan waktu istirahat.</li>
+        </ul>
+        <p>Sumber: Buku Siswa Informatika Kelas X Kurikulum Merdeka <a href="https://www.scribd.com/document/829542802/Buku-Siswa-Informatika-Kelas-x-Kurikulum-Merdeka-Bukupaketcom" target="_blank">[link]</a></p>
         <h4 class="font-semibold text-lg mt-4 mb-2">🔨 Dekomposisi (Decomposition)</h4>
         <div class="bg-primary/10 p-4 rounded-lg">
           <p><strong>Pecah masalah besar jadi bagian-bagian kecil yang manageable!</strong></p>
