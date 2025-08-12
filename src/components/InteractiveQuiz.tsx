@@ -103,11 +103,14 @@ const interactiveQuizData: QuizQuestion[] = [
 
 export const InteractiveQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, any>>({});
-  const [submitted, setSubmitted] = useState<Record<string, boolean>>({});
+  const [answers, setAnswers] = useState<{ [key: string]: any }>({});
   const [showResults, setShowResults] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
-
+  const [submitted, setSubmitted] = useState<{ [key: string]: boolean }>({});
+  const [studentName, setStudentName] = useState("");
+  const [studentClass, setStudentClass] = useState("");
+  
+  const maxScore = interactiveQuizData.reduce((sum, q) => sum + q.points, 0);
   const question = interactiveQuizData[currentQuestion];
   const isLastQuestion = currentQuestion === interactiveQuizData.length - 1;
   const userAnswer = answers[question.id];
@@ -252,9 +255,7 @@ export const InteractiveQuiz = () => {
   };
 
   if (showResults) {
-    const maxScore = interactiveQuizData.reduce((sum, q) => sum + q.points, 0);
     const percentage = (totalScore / maxScore) * 100;
-    
     return (
       <Card className="card-modern border-2 animate-fade-in">
         <CardHeader>
@@ -311,6 +312,38 @@ export const InteractiveQuiz = () => {
                   </div>
                 );
               })}
+            </div>
+            
+            <div className="mt-8 space-y-4">
+              <Input
+                type="text"
+                placeholder="Nama Lengkap"
+                value={studentName}
+                onChange={e => setStudentName(e.target.value)}
+                required
+                className="w-full"
+              />
+              <Input
+                type="text"
+                placeholder="Kelas (misal: X-1)"
+                value={studentClass}
+                onChange={e => setStudentClass(e.target.value)}
+                required
+                className="w-full"
+              />
+              <Button
+                className="w-full"
+                disabled={!studentName || !studentClass}
+                onClick={() => {
+                  const waNumber = "6285785377790";
+                  const waText = encodeURIComponent(
+                    `Nama: ${studentName}\nKelas: ${studentClass}\nSkor: ${totalScore}/${maxScore}\nJawaban: ${JSON.stringify(answers, null, 2)}`
+                  );
+                  window.open(`https://wa.me/${waNumber}?text=${waText}`);
+                }}
+              >
+                Kirim ke WhatsApp Guru
+              </Button>
             </div>
           </div>
         </CardContent>
@@ -389,45 +422,21 @@ export const InteractiveQuiz = () => {
                 </p>
               </div>
           )}
+          
+          {isSubmitted && (
+            <div className="flex gap-2">
+              {currentQuestion > 0 && (
+                <Button onClick={handlePrevious} variant="outline" className="flex-1">
+                  ⬅️ Sebelumnya
+                </Button>
+              )}
+              <Button onClick={handleNext} className="flex-1">
+                {isLastQuestion ? "🏁 Lihat Hasil" : "Selanjutnya ➡️"}
+              </Button>
+            </div>
+          )}
         </div>
       </CardContent>
     </Card>
   );
 };
-                                                                                      
-const [studentName, setStudentName] = useState("");
-const [studentClass, setStudentClass] = useState("");
-
-{showResults && (
-  <div className="mt-8 space-y-4">
-    <input
-      type="text"
-      placeholder="Nama Lengkap"
-      value={studentName}
-      onChange={e => setStudentName(e.target.value)}
-      required
-      className="input input-bordered w-full"
-    />
-    <input
-      type="text"
-      placeholder="Kelas (misal: X-1)"
-      value={studentClass}
-      onChange={e => setStudentClass(e.target.value)}
-      required
-      className="input input-bordered w-full"
-    />
-    <button
-      className="btn btn-success w-full"
-      disabled={!studentName || !studentClass}
-      onClick={() => {
-        const waNumber = "6285785377790";
-        const waText = encodeURIComponent(
-          `Nama: ${studentName}\nKelas: ${studentClass}\nSkor: ${totalScore}/${maxScore}\nJawaban: ${JSON.stringify(answers, null, 2)}`
-        );
-        window.open(`https://wa.me/${waNumber}?text=${waText}`);
-      }}
-    >
-      Kirim ke WhatsApp Guru
-    </button>
-  </div>
-)}
