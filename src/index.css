@@ -172,12 +172,14 @@ All colors MUST be HSL.
   
   /* Quiz Feedback */
   .quiz-correct {
-    @apply bg-secondary/10 border-secondary text-secondary-foreground;
+    @apply bg-secondary/10 border-secondary;
+    color: #000000 !important;
     animation: pulse 0.6s ease-in-out;
   }
   
   .quiz-incorrect {
-    @apply bg-destructive/10 border-destructive text-destructive-foreground;
+    @apply bg-destructive/10 border-destructive;
+    color: #000000 !important;
     animation: shake 0.5s ease-in-out;
   }
 }

@@ -43,7 +43,7 @@
 
 .quiz-feedback-wrong {
   background: #ff4d4f;
-  color: #111;
+  color: #000000 !important;
   padding: 1em;
   border-radius: 8px;
   font-weight: 500;
@@ -53,7 +53,7 @@
 }
 .quiz-correct {
   background: #e6fff3;
-  color: #111;
+  color: #000000 !important;
   padding: 1em;
   border-radius: 8px;
   font-weight: 500;
