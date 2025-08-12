@@ -18,56 +18,48 @@ const Index = () => {
       title: "Pengertian Informatika",
       emoji: "💡",
       content: `
-        <p><strong>Informatika itu kayak otaknya komputer, bro! 😎</strong></p>
-        <p>Informatika adalah ilmu yang mempelajari pemrosesan informasi menggunakan komputer. Bayangin aja, semua yang ada di HP kalian - dari Instagram, TikTok, sampai game favorit - semuanya hasil dari ilmu informatika!</p>
+        <p><strong>Informatika adalah ilmu yang mempelajari pemrosesan informasi menggunakan komputer! 🖥️</strong></p>
+        <p>Berdasarkan Kurikulum Merdeka, informatika mencakup 4 aspek utama: <strong>Berpikir Komputasional, Teknologi Informasi dan Komunikasi, Sistem Komputer, dan Jaringan Komputer.</strong></p>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🖥️ Perangkat Keras (Hardware)</h4>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Processor (CPU)</strong> - Otaknya komputer yang ngolah semua instruksi. Makin tinggi clock speed (GHz), makin cepat prosesnya!</li>
-          <li><strong>Memory (RAM)</strong> - Tempat nyimpen data sementara saat komputer lagi jalan. 8GB udah cukup buat daily use, 16GB buat gaming!</li>
-          <li><strong>Storage (HDD/SSD)</strong> - HDD lebih murah tapi lambat, SSD lebih mahal tapi super cepet! Makanya laptop sekarang pake SSD.</li>
-          <li><strong>Motherboard</strong> - Papan induk yang nyambungin semua komponen. Kayak jalan raya buat data!</li>
-          <li><strong>GPU</strong> - Khusus buat grafis dan gaming. RTX series dari NVIDIA lagi hits banget!</li>
-          <li><strong>Input/Output devices</strong> - Mouse gaming mechanical, keyboard RGB, monitor 144Hz buat esports!</li>
-        </ul>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">💾 Perangkat Lunak (Software)</h4>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Sistem Operasi</strong> - Windows 11 (popular), macOS (creative work), Linux (programmer)</li>
-          <li><strong>Web Browser</strong> - Chrome, Firefox, Edge, Safari. Chrome paling banyak dipake tapi boros RAM!</li>
-          <li><strong>Aplikasi Productivity</strong> - Microsoft Office, Google Workspace, Notion (lagi trending!)</li>
-          <li><strong>Programming Languages</strong> - Python (AI/ML), JavaScript (web development), Swift (iOS apps)</li>
-          <li><strong>Database</strong> - MySQL, PostgreSQL, MongoDB buat nyimpen data aplikasi</li>
-          <li><strong>Cloud Services</strong> - AWS, Google Cloud, Azure. Kayak sewa komputer super kuat!</li>
-        </ul>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">🌐 Jaringan Komputer</h4>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Internet</strong> - Jaringan global yang nyambungin seluruh dunia. Bayangkan perpustakaan raksasa!</li>
-          <li><strong>WiFi</strong> - Wireless internet. 2.4GHz jangkauan jauh, 5GHz speed tinggi</li>
-          <li><strong>IP Address</strong> - Alamat unik setiap device di internet. Kayak alamat rumah tapi digital!</li>
-          <li><strong>DNS</strong> - Nerjemahin domain (google.com) jadi IP address yang dimengerti komputer</li>
-        </ul>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">🌍 Dampak Sosial Informatika</h4>
-        <div class="bg-accent/10 p-4 rounded-lg">
-          <p><strong>Revolusi Digital di Indonesia:</strong></p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>E-commerce</strong> - Shopee, Tokopedia, Blibli. UMKM bisa jualan online ke seluruh Indonesia!</li>
-            <li><strong>Fintech</strong> - GoPay, OVO, Dana. Nggak perlu bawa cash kemana-mana!</li>
-            <li><strong>EdTech</strong> - Ruangguru, Zenius, Khan Academy. Belajar dari rumah jadi mudah!</li>
-            <li><strong>Transportation</strong> - Gojek, Grab. Ojek online revolution!</li>
-            <li><strong>Social Media</strong> - Instagram, TikTok, Twitter. Bisa viral dalam hitungan jam!</li>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🖥️ Sistem Komputer (Hardware & Software)</h4>
+        <div class="bg-primary/10 p-4 rounded-lg">
+          <p><strong>Komponen Utama Komputer:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>CPU (Central Processing Unit)</strong> - Otak komputer yang menjalankan instruksi program</li>
+            <li><strong>Memory (RAM)</strong> - Tempat penyimpanan sementara data yang sedang diproses</li>
+            <li><strong>Storage (HDD/SSD)</strong> - Penyimpanan permanen untuk data dan program</li>
+            <li><strong>Motherboard</strong> - Papan utama yang menghubungkan semua komponen</li>
+            <li><strong>Input Devices</strong> - Keyboard, mouse, scanner untuk memasukkan data</li>
+            <li><strong>Output Devices</strong> - Monitor, printer, speaker untuk menampilkan hasil</li>
           </ul>
         </div>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🔐 Keamanan Cyber</h4>
-        <p>Di era digital, keamanan data super penting! Hacker makin pinter, kita harus lebih aware:</p>
+        <h4 class="font-semibold text-lg mt-4 mb-2">💾 Perangkat Lunak (Software)</h4>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>Password Strong</strong> - Minimal 12 karakter, campuran huruf, angka, symbol</li>
-          <li><strong>Two-Factor Authentication</strong> - Aktivin di semua akun penting (Google, Instagram, dll)</li>
-          <li><strong>Phishing</strong> - Jangan klik link mencurigakan di email/SMS</li>
-          <li><strong>Software Update</strong> - Selalu update OS dan aplikasi buat patch keamanan</li>
+          <li><strong>Sistem Operasi</strong> - Windows, macOS, Linux yang mengelola hardware</li>
+          <li><strong>Aplikasi</strong> - Program yang dibuat untuk tugas tertentu</li>
+          <li><strong>Driver</strong> - Software untuk mengontrol hardware</li>
+          <li><strong>Utility</strong> - Program bantu seperti antivirus, defragmenter</li>
+        </ul>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">🌐 Jaringan Komputer</h4>
+        <div class="bg-secondary/10 p-4 rounded-lg">
+          <p><strong>Jenis Jaringan:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>LAN (Local Area Network)</strong> - Jaringan dalam satu gedung/kantor</li>
+            <li><strong>WAN (Wide Area Network)</strong> - Jaringan antar kota/negara</li>
+            <li><strong>Internet</strong> - Jaringan global yang menghubungkan seluruh dunia</li>
+            <li><strong>Intranet</strong> - Jaringan internal organisasi</li>
+          </ul>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">🔐 Keamanan Informasi</h4>
+        <p>Aspek penting dalam era digital yang wajib dipahami:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li><strong>Autentikasi</strong> - Memverifikasi identitas pengguna</li>
+          <li><strong>Otorisasi</strong> - Mengatur hak akses pengguna</li>
+          <li><strong>Enkripsi</strong> - Mengamankan data dengan kode rahasia</li>
+          <li><strong>Backup</strong> - Membuat salinan data untuk keamanan</li>
         </ul>
       `
     },
@@ -76,114 +68,68 @@ const Index = () => {
       title: "Kemampuan Umum dalam Informatika",
       emoji: "🚀",
       content: `
-        <p><strong>Skills yang harus dikuasai buat jadi pro di dunia digital! 💪</strong></p>
+        <p><strong>Kompetensi yang wajib dikuasai siswa kelas X sesuai Kurikulum Merdeka! 📚</strong></p>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🤝 Kolaborasi Digital</h4>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🔍 Literasi Digital</h4>
         <div class="bg-primary/10 p-4 rounded-lg">
-          <p>Kerja tim di era digital lebih dari sekedar WhatsApp group!</p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Version Control</strong> - Git untuk track changes di project coding</li>
-            <li><strong>Project Management</strong> - Trello, Asana, Monday.com buat manage tasks</li>
-            <li><strong>Communication Tools</strong> - Slack, Discord, Microsoft Teams</li>
-            <li><strong>Cloud Collaboration</strong> - Google Docs, Figma, Miro buat real-time editing</li>
+          <p><strong>Kemampuan menggunakan teknologi digital secara efektif:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Digital Tools</strong> - Menggunakan aplikasi produktivitas (Word, Excel, PowerPoint)</li>
+            <li><strong>Information Literacy</strong> - Mencari, mengevaluasi, dan menggunakan informasi digital</li>
+            <li><strong>Digital Communication</strong> - Berkomunikasi efektif melalui berbagai platform digital</li>
+            <li><strong>Digital Content Creation</strong> - Membuat konten digital yang informatif dan menarik</li>
           </ul>
         </div>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Problem Definition & Analysis</h4>
-        <p>Sebelum coding, harus tau dulu masalahnya apa. Framework berpikir:</p>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🤝 Kolaborasi Digital</h4>
+        <p>Kemampuan bekerja sama dalam lingkungan digital:</p>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>5W+1H Method</strong> - What, Who, When, Where, Why, How</li>
-          <li><strong>User Research</strong> - Interview, survey, observasi user behavior</li>
-          <li><strong>Problem Statement</strong> - "How might we..." format</li>
-          <li><strong>Success Metrics</strong> - Gimana cara ngukur berhasil atau nggak</li>
+          <li><strong>Online Collaboration</strong> - Bekerja sama menggunakan tools digital</li>
+          <li><strong>Project Management</strong> - Mengelola proyek menggunakan software manajemen</li>
+          <li><strong>Version Control</strong> - Mengelola perubahan dokumen/kode secara kolaboratif</li>
+          <li><strong>Communication Tools</strong> - Menggunakan platform komunikasi digital secara efektif</li>
         </ul>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🔍 Abstraksi & Generalisasi</h4>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Problem Solving</h4>
         <div class="bg-secondary/10 p-4 rounded-lg">
-          <p><strong>Contoh Real World:</strong></p>
-          <p>Bikin sistem login untuk aplikasi:</p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Abstraksi</strong> - Fokus ke: username, password, validation</li>
-            <li><strong>Ignore</strong> - Warna button, font, animasi (bisa diurus nanti)</li>
-            <li><strong>Pattern</strong> - Login Instagram = Login TikTok = Login YouTube (sama aja!)</li>
+          <p><strong>Kemampuan menyelesaikan masalah secara sistematis:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Problem Analysis</strong> - Menganalisis masalah secara mendalam</li>
+            <li><strong>Solution Design</strong> - Merancang solusi yang efektif</li>
+            <li><strong>Implementation</strong> - Menerapkan solusi dengan tepat</li>
+            <li><strong>Evaluation</strong> - Mengevaluasi hasil dan melakukan perbaikan</li>
           </ul>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">📊 Data Literacy</h4>
-        <p>Skill wajib di era Big Data! Bisa baca, analisis, dan interpretasi data:</p>
+        <p>Kemampuan memahami dan menggunakan data:</p>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>Data Collection</strong> - Google Analytics, social media insights</li>
-          <li><strong>Data Visualization</strong> - Chart, graph, infografis yang menarik</li>
-          <li><strong>Statistical Thinking</strong> - Mean, median, correlation, trend analysis</li>
-          <li><strong>Tools</strong> - Excel, Google Sheets, Tableau untuk visualisasi data</li>
-        </ul>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">📢 Komunikasi Digital</h4>
-        <p>Gimana cara jelasin hal teknis ke orang awam:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Storytelling</strong> - Pake cerita dan analogi yang relatable</li>
-          <li><strong>Visual Communication</strong> - Infografis, flowchart, mockup design</li>
-          <li><strong>Presentation Skills</strong> - Canva, PowerPoint, Prezi buat slide keren</li>
-          <li><strong>Documentation</strong> - Bikin tutorial yang mudah diikuti</li>
+          <li><strong>Data Collection</strong> - Mengumpulkan data yang relevan</li>
+          <li><strong>Data Analysis</strong> - Menganalisis data untuk mendapatkan insight</li>
+          <li><strong>Data Visualization</strong> - Menampilkan data dalam bentuk yang mudah dipahami</li>
+          <li><strong>Data Interpretation</strong> - Menafsirkan hasil analisis data</li>
         </ul>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">🛡️ Digital Citizenship</h4>
         <div class="bg-accent/10 p-4 rounded-lg">
-          <p><strong>Jadi netizen yang bertanggung jawab:</strong></p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Digital Footprint</strong> - Semua yang kita post online itu permanen!</li>
-            <li><strong>Fact Checking</strong> - Cek dulu sebelum share. Pake Turnbackhoax.id</li>
-            <li><strong>Cyberbullying Prevention</strong> - Think before you type</li>
-            <li><strong>Copyright Awareness</strong> - Respect karya orang lain, credit the creator</li>
-            <li><strong>Privacy Settings</strong> - Atur siapa aja yang bisa liat profile dan post kita</li>
+          <p><strong>Menjadi warga digital yang bertanggung jawab:</strong></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Digital Ethics</strong> - Berperilaku etis di dunia digital</li>
+            <li><strong>Privacy Protection</strong> - Melindungi privasi diri dan orang lain</li>
+            <li><strong>Cyberbullying Prevention</strong> - Mencegah dan mengatasi cyberbullying</li>
+            <li><strong>Copyright Awareness</strong> - Menghormati hak cipta dan kekayaan intelektual</li>
+            <li><strong>Digital Footprint</strong> - Mengelola jejak digital dengan bijak</li>
           </ul>
         </div>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🔒 HTTPS & Web Security</h4>
-        <div class="bg-primary/10 p-4 rounded-lg">
-          <p><strong>Kenapa HTTPS Penting:</strong></p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Encryption</strong> - Data dienkripsi pakai algoritma AES-256</li>
-            <li><strong>Authentication</strong> - Memastikan website itu asli, bukan fake</li>
-            <li><strong>Data Integrity</strong> - Data nggak bisa diubah di tengah jalan</li>
-            <li><strong>Visual Indicator</strong> - Icon gembok 🔒 di address bar</li>
-          </ul>
-          <p class="mt-2"><strong>Red Flag:</strong> Kalau ada website HTTP tanpa S, jangan masukin data penting!</p>
-        </div>
-      `
-    },
-    {
-      id: "etika",
-      title: "Etika Digital & Dampak Sosial",
-      emoji: "⚖️",
-      content: `
-        <p><strong>Bermedia digital yang bertanggung jawab itu skill masa depan! 🌟</strong></p>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">🎭 Digital Identity</h4>
-        <p>Online persona vs real personality harus balance:</p>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🔒 Keamanan Cyber</h4>
+        <p>Kemampuan melindungi diri dari ancaman digital:</p>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>Authentic Content</strong> - Be yourself, jangan fake buat likes</li>
-          <li><strong>Personal Branding</strong> - Build reputation yang konsisten</li>
-          <li><strong>Professional Image</strong> - LinkedIn profile yang rapih buat career</li>
-        </ul>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">🔄 Algoritma & Filter Bubble</h4>
-        <div class="bg-secondary/10 p-4 rounded-lg">
-          <p><strong>How Social Media Algorithm Works:</strong></p>
-          <ul class="list-disc list-inside space-y-1 mt-2">
-            <li>Instagram: Engagement rate, time spent, relationship dengan creator</li>
-            <li>TikTok: Video completion rate, shares, comments</li>
-            <li>YouTube: Watch time, click-through rate, subscriber interaction</li>
-          </ul>
-          <p class="mt-2"><strong>Escape Filter Bubble:</strong> Actively search diverse content!</p>
-        </div>
-        
-        <h4 class="font-semibold text-lg mt-4 mb-2">📱 Digital Wellness</h4>
-        <p>Technology addiction is real! Balance screen time:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Screen Time Control</strong> - iOS Screen Time, Android Digital Wellbeing</li>
-          <li><strong>Notification Management</strong> - Turn off non-essential notifications</li>
-          <li><strong>Digital Detox</strong> - Phone-free zones dan waktu tertentu</li>
+          <li><strong>Password Security</strong> - Membuat dan mengelola password yang kuat</li>
+          <li><strong>Two-Factor Authentication</strong> - Mengaktifkan autentikasi dua faktor</li>
+          <li><strong>Phishing Awareness</strong> - Mengenali dan menghindari serangan phishing</li>
+          <li><strong>Software Updates</strong> - Selalu memperbarui software untuk keamanan</li>
+          <li><strong>Safe Browsing</strong> - Berinternet dengan aman dan bijak</li>
         </ul>
       `
     }
@@ -196,68 +142,81 @@ const Index = () => {
       title: "Elemen Berpikir Komputasional",
       emoji: "🧩",
       content: `
-        <p><strong>4 Elemen Super Power buat solve masalah kayak programmer! 🦸‍♂️</strong></p>
-        <p>Berpikir komputasional adalah cara berpikir untuk menyelesaikan masalah secara efisien, efektif, dan optimal sesuai logika informatika. Siswa dilatih untuk memecahkan masalah dengan membaginya menjadi bagian-bagian kecil agar lebih mudah diselesaikan.</p>
-        <ul class="list-disc list-inside space-y-1 mt-2">
-          <li><strong>Dekomposisi:</strong> Memecah masalah besar menjadi bagian kecil. <br/>Contoh: Membuat jadwal belajar harian, pecah jadi: tentukan pelajaran, waktu belajar, waktu istirahat.</li>
-          <li><strong>Pengenalan Pola:</strong> Mencari pola dari masalah yang sudah dipecah. <br/>Contoh: Setiap hari ada pelajaran utama dan waktu istirahat, pola ini bisa diterapkan ke jadwal lain.</li>
-          <li><strong>Abstraksi:</strong> Mengambil inti masalah dan mengabaikan detail yang tidak penting. <br/>Contoh: Fokus pada urutan pelajaran dan waktu, abaikan warna tabel atau font.</li>
-          <li><strong>Desain Algoritma:</strong> Membuat langkah-langkah solusi yang jelas dan sistematis. <br/>Contoh: Buat tabel jadwal, tentukan urutan pelajaran, dan waktu istirahat.</li>
-        </ul>
-        <p>Sumber: Buku Siswa Informatika Kelas X Kurikulum Merdeka <a href="https://www.scribd.com/document/829542802/Buku-Siswa-Informatika-Kelas-x-Kurikulum-Merdeka-Bukupaketcom" target="_blank">[link]</a></p>
+        <p><strong>4 Elemen fundamental yang wajib dikuasai siswa kelas X! 🎯</strong></p>
+        <p>Berdasarkan Kurikulum Merdeka, Berpikir Komputasional adalah kemampuan untuk memecahkan masalah dengan cara berpikir yang sistematis, logis, dan efisien menggunakan konsep informatika.</p>
+        
         <h4 class="font-semibold text-lg mt-4 mb-2">🔨 Dekomposisi (Decomposition)</h4>
         <div class="bg-primary/10 p-4 rounded-lg">
-          <p><strong>Pecah masalah besar jadi bagian-bagian kecil yang manageable!</strong></p>
+          <p><strong>Memecah masalah besar menjadi bagian-bagian kecil yang dapat dikelola:</strong></p>
+          <p class="mt-2"><strong>Contoh Praktis:</strong></p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Web Development:</strong> Header → Navigation → Content → Sidebar → Footer</li>
-            <li><strong>Mobile App:</strong> Login → Dashboard → Features → Settings → Logout</li>
-            <li><strong>Game Development:</strong> Character → Environment → Physics → Audio → UI</li>
-            <li><strong>E-commerce:</strong> Product Catalog → Cart → Payment → Shipping → Confirmation</li>
+            <li><strong>Membuat Website Sekolah:</strong> Header → Navigation → Content → Sidebar → Footer</li>
+            <li><strong>Mengorganisir Acara:</strong> Persiapan → Pelaksanaan → Evaluasi → Dokumentasi</li>
+            <li><strong>Menyelesaikan Soal Matematika:</strong> Baca soal → Identifikasi rumus → Hitung → Verifikasi jawaban</li>
+            <li><strong>Membuat Presentasi:</strong> Outline → Research → Design → Practice → Delivery</li>
           </ul>
+          <p class="mt-2 text-sm"><strong>Manfaat:</strong> Masalah menjadi lebih mudah dipahami dan diselesaikan</p>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">🔍 Pengenalan Pola (Pattern Recognition)</h4>
-        <p>Cari kesamaan dari masalah yang udah pernah diselesaikan sebelumnya:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Login Systems:</strong> Instagram = TikTok = YouTube (username + password)</li>
-          <li><strong>Search Functions:</strong> Google = YouTube = Spotify (input field + filter)</li>
-          <li><strong>Shopping Cart:</strong> Shopee = Tokopedia = Amazon (add to cart → checkout)</li>
-          <li><strong>Social Media Feed:</strong> Timeline pattern di semua platform</li>
-        </ul>
+        <div class="bg-secondary/10 p-4 rounded-lg">
+          <p><strong>Mengidentifikasi kesamaan dan perbedaan dalam masalah:</strong></p>
+          <p class="mt-2"><strong>Contoh Real World:</strong></p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li><strong>Login Systems:</strong> Semua aplikasi menggunakan username + password + validation</li>
+            <li><strong>E-commerce:</strong> Browse → Add to cart → Checkout → Payment → Confirmation</li>
+            <li><strong>Social Media:</strong> Post → Like → Comment → Share → Follow</li>
+            <li><strong>Learning Management:</strong> Course → Module → Assignment → Quiz → Grade</li>
+          </ul>
+          <p class="mt-2 text-sm"><strong>Manfaat:</strong> Dapat menggunakan solusi yang sudah terbukti efektif</p>
+        </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">✨ Abstraksi (Abstraction)</h4>
-        <div class="bg-secondary/10 p-4 rounded-lg">
-          <p><strong>Fokus ke hal penting, ignore detail yang nggak perlu!</strong></p>
-          <p class="mt-2"><strong>Contoh: Bikin Sistem Booking Tiket Bioskop</strong></p>
+        <div class="bg-accent/10 p-4 rounded-lg">
+          <p><strong>Memfokuskan pada hal-hal penting dan mengabaikan detail yang tidak relevan:</strong></p>
+          <p class="mt-2"><strong>Contoh: Sistem Informasi Akademik</strong></p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Focus:</strong> Pilih film → Pilih jadwal → Pilih kursi → Bayar</li>
-            <li><strong>Ignore (for now):</strong> Warna UI, animasi, font, logo design</li>
-            <li><strong>Essential Data:</strong> User ID, Movie ID, Seat Number, Payment Status</li>
+            <li><strong>Fokus (Essential):</strong> NIS, Nama, Kelas, Mata Pelajaran, Nilai</li>
+            <li><strong>Abstrak (Ignore):</strong> Warna interface, font, animasi, logo</li>
+            <li><strong>Data Structure:</strong> Student → Courses → Grades → Attendance</li>
+            <li><strong>Business Logic:</strong> IF nilai >= 75 THEN lulus ELSE tidak lulus</li>
           </ul>
+          <p class="mt-2 text-sm"><strong>Manfaat:</strong> Fokus pada solusi inti tanpa terdistraksi detail</p>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">⚙️ Desain Algoritma (Algorithm Design)</h4>
-        <p>Bikin langkah-langkah detail dan logis buat solve masalah:</p>
-        <div class="bg-accent/10 p-4 rounded-lg mt-2">
-          <p class="font-semibold">Contoh: Algoritma Recommendation System (kayak Spotify)</p>
-          <ol class="list-decimal list-inside space-y-1 mt-2">
-            <li>Collect user listening history</li>
-            <li>Analyze genre preferences</li>
-            <li>Find similar users (collaborative filtering)</li>
-            <li>Recommend songs liked by similar users</li>
-            <li>Track click-through rate</li>
-            <li>Improve algorithm based on feedback</li>
-          </ol>
+        <div class="bg-primary/10 p-4 rounded-lg">
+          <p><strong>Membuat langkah-langkah yang jelas dan sistematis untuk menyelesaikan masalah:</strong></p>
+          <p class="mt-2"><strong>Contoh: Algoritma Pencarian Data Siswa</strong></p>
+          <div class="bg-background p-3 rounded mt-2 font-mono text-sm">
+            <p>1. Mulai dari awal database</p>
+            <p>2. Baca data siswa satu per satu</p>
+            <p>3. Bandingkan NIS dengan NIS yang dicari</p>
+            <p>4. IF NIS cocok THEN tampilkan data siswa</p>
+            <p>5. ELSE lanjut ke siswa berikutnya</p>
+            <p>6. Ulangi sampai data ditemukan atau database habis</p>
+            <p>7. IF data tidak ditemukan THEN tampilkan "Data tidak ditemukan"</p>
+          </div>
+          <p class="mt-2 text-sm"><strong>Manfaat:</strong> Solusi dapat dijalankan secara konsisten dan dapat diulang</p>
         </div>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Case Study: Bikin App Food Delivery</h4>
-        <div class="bg-primary/10 p-4 rounded-lg">
-          <p class="font-semibold">Applying 4 Elements:</p>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Aplikasi dalam Kehidupan Sehari-hari</h4>
+        <div class="bg-secondary/10 p-4 rounded-lg">
+          <p class="font-semibold">Contoh Penerapan 4 Elemen:</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Dekomposisi:</strong> User Registration → Restaurant List → Menu → Order → Payment → Tracking</li>
-            <li><strong>Pattern Recognition:</strong> Similar to Gojek Food, Grab Food flow</li>
-            <li><strong>Abstraksi:</strong> Focus: User, Restaurant, Food, Order. Ignore: UI colors, animations</li>
-            <li><strong>Algoritma:</strong> IF user location detected AND restaurant open THEN show menu</li>
+            <li><strong>Membuat Jadwal Belajar:</strong> Dekomposisi (pecah per mata pelajaran), Pattern (setiap hari ada pola yang sama), Abstraksi (fokus waktu dan mata pelajaran), Algoritma (buat tabel → isi jadwal → review)</li>
+            <li><strong>Mengorganisir Tugas:</strong> Dekomposisi (urutkan prioritas), Pattern (deadline → submission → feedback), Abstraksi (fokus deadline dan requirement), Algoritma (buat checklist → kerjakan → submit → follow up)</li>
+            <li><strong>Menyelesaikan Masalah Kelompok:</strong> Dekomposisi (bagi per anggota), Pattern (brainstorm → discuss → decide → execute), Abstraksi (fokus tujuan dan timeline), Algoritma (meeting → assign task → monitor → evaluate)</li>
+          </ul>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">📚 Sumber Referensi</h4>
+        <div class="bg-accent/10 p-4 rounded-lg">
+          <p><strong>Berdasarkan Kurikulum Merdeka Informatika Kelas X:</strong></p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Kompetensi Dasar: 3.1 Menerapkan elemen berpikir komputasional dalam pemecahan masalah</li>
+            <li>Indikator: Siswa dapat mengidentifikasi dan menerapkan 4 elemen berpikir komputasional</li>
+            <li>Materi Pokok: Dekomposisi, Pengenalan Pola, Abstraksi, dan Desain Algoritma</li>
           </ul>
         </div>
       `
@@ -267,91 +226,123 @@ const Index = () => {
       title: "Struktur Data & Algoritma",
       emoji: "📚",
       content: `
-        <p><strong>Cara komputer nyimpen dan ngatur data, super cool! 🤓</strong></p>
+        <p><strong>Memahami cara komputer menyimpan, mengorganisir, dan memproses data! 🖥️</strong></p>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">📦 Stack (LIFO - Last In First Out)</h4>
         <div class="bg-secondary/10 p-4 rounded-lg">
-          <p><strong>Kayak tumpukan piring! Yang terakhir ditaro, yang pertama diambil.</strong></p>
-          <p class="mt-2"><strong>Real World Applications:</strong></p>
+          <p><strong>Struktur data yang mengikuti prinsip "yang terakhir masuk, yang pertama keluar":</strong></p>
+          <p class="mt-2"><strong>Aplikasi dalam Kehidupan Sehari-hari:</strong></p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Undo/Redo</strong> - Photoshop, Microsoft Word, Code Editor</li>
-            <li><strong>Browser History</strong> - Back button functionality</li>
-            <li><strong>Function Calls</strong> - Programming recursion</li>
-            <li><strong>Expression Evaluation</strong> - Calculator mathematical operations</li>
+            <li><strong>Undo/Redo System</strong> - Microsoft Word, Photoshop, Code Editor</li>
+            <li><strong>Browser History</strong> - Tombol back dan forward</li>
+            <li><strong>Function Calls</strong> - Pemanggilan fungsi dalam programming</li>
+            <li><strong>Expression Evaluation</strong> - Kalkulator matematika</li>
+            <li><strong>Game Save States</strong> - Checkpoint dalam game</li>
           </ul>
           
-          <p class="font-semibold mt-4">Stack Operations:</p>
+          <p class="font-semibold mt-4">Operasi Dasar Stack:</p>
           <ol class="list-decimal list-inside space-y-1 mt-2">
-            <li>PUSH - Masukin data ke top of stack</li>
-            <li>POP - Keluarin data dari top of stack</li>
-            <li>PEEK/TOP - Liat data teratas tanpa remove</li>
-            <li>isEmpty - Cek stack kosong atau nggak</li>
+            <li><strong>PUSH</strong> - Menambahkan elemen ke atas stack</li>
+            <li><strong>POP</strong> - Mengambil dan menghapus elemen teratas</li>
+            <li><strong>PEEK/TOP</strong> - Melihat elemen teratas tanpa menghapus</li>
+            <li><strong>isEmpty</strong> - Mengecek apakah stack kosong</li>
+            <li><strong>size</strong> - Mengetahui jumlah elemen dalam stack</li>
           </ol>
           
           <p class="text-sm mt-2 font-mono bg-background p-2 rounded">
             Stack: [] → [A] → [A,B] → [A,B,C] → [A,B] → [A] → []<br/>
-            Operations: push(A) → push(B) → push(C) → pop() → pop() → pop()
+            Operasi: push(A) → push(B) → push(C) → pop() → pop() → pop()
           </p>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">🚶‍♂️ Queue (FIFO - First In First Out)</h4>
         <div class="bg-primary/10 p-4 rounded-lg">
-          <p><strong>Kayak antrian di bank! Yang pertama datang, yang pertama dilayani.</strong></p>
-          <p class="mt-2"><strong>Real World Applications:</strong></p>
+          <p><strong>Struktur data yang mengikuti prinsip "yang pertama masuk, yang pertama keluar":</strong></p>
+          <p class="mt-2"><strong>Aplikasi dalam Kehidupan Sehari-hari:</strong></p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Print Queue</strong> - Antrian dokumen yang mau di-print</li>
-            <li><strong>Playlist</strong> - Lagu next yang bakal diputar</li>
-            <li><strong>CPU Scheduling</strong> - Process yang menunggu giliran</li>
-            <li><strong>Network Packets</strong> - Data yang dikirim via internet</li>
+            <li><strong>Print Queue</strong> - Antrian dokumen yang akan dicetak</li>
+            <li><strong>Playlist Music</strong> - Daftar lagu yang akan diputar</li>
+            <li><strong>CPU Scheduling</strong> - Proses yang menunggu giliran eksekusi</li>
+            <li><strong>Network Packets</strong> - Data yang dikirim melalui internet</li>
+            <li><strong>Customer Service</strong> - Antrian pelanggan yang menunggu</li>
           </ul>
           
-          <p class="font-semibold mt-4">Queue Operations:</p>
+          <p class="font-semibold mt-4">Operasi Dasar Queue:</p>
           <ol class="list-decimal list-inside space-y-1 mt-2">
-            <li>ENQUEUE - Masukin data ke belakang queue</li>
-            <li>DEQUEUE - Keluarin data dari depan queue</li>
-            <li>FRONT - Liat data terdepan</li>
-            <li>REAR - Liat data terbelakang</li>
+            <li><strong>ENQUEUE</strong> - Menambahkan elemen ke belakang queue</li>
+            <li><strong>DEQUEUE</strong> - Mengambil dan menghapus elemen terdepan</li>
+            <li><strong>FRONT</strong> - Melihat elemen terdepan tanpa menghapus</li>
+            <li><strong>REAR</strong> - Melihat elemen terbelakang</li>
+            <li><strong>isEmpty</strong> - Mengecek apakah queue kosong</li>
           </ol>
           
           <p class="text-sm mt-2 font-mono bg-background p-2 rounded">
             Queue: [] → [A] → [A,B] → [A,B,C] → [B,C] → [C] → []<br/>
-            Operations: enqueue(A) → enqueue(B) → enqueue(C) → dequeue() → dequeue() → dequeue()
+            Operasi: enqueue(A) → enqueue(B) → enqueue(C) → dequeue() → dequeue() → dequeue()
           </p>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">🔄 Algoritma Sorting</h4>
         <div class="bg-accent/10 p-4 rounded-lg">
-          <p><strong>Cara ngurutin data dari kecil ke besar (ascending) atau sebaliknya:</strong></p>
+          <p><strong>Teknik untuk mengurutkan data dari kecil ke besar (ascending) atau sebaliknya:</strong></p>
           
           <p class="font-semibold mt-4">1. Bubble Sort</p>
-          <p>Bandingin 2 elemen bersebelahan, tukar kalau urutannya salah. Repeat until sorted!</p>
+          <p>Membandingkan dua elemen bersebelahan dan menukar posisi jika urutannya salah. Proses diulang sampai semua data terurut.</p>
           <p class="text-sm font-mono bg-background p-2 rounded mt-1">
             [64, 34, 25, 12] → [34, 64, 25, 12] → [34, 25, 64, 12] → [34, 25, 12, 64]
           </p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(n²) - Cocok untuk data kecil</p>
           
           <p class="font-semibold mt-4">2. Selection Sort</p>
-          <p>Cari elemen terkecil, taro di posisi pertama. Repeat untuk posisi berikutnya.</p>
+          <p>Mencari elemen terkecil dan menempatkannya di posisi pertama. Proses diulang untuk posisi berikutnya.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(n²) - Lebih efisien dari Bubble Sort</p>
           
-          <p class="font-semibold mt-4">3. Quick Sort (Advanced)</p>
-          <p>Pilih pivot, partition array, recursively sort left and right. Fastest!</p>
+          <p class="font-semibold mt-4">3. Insertion Sort</p>
+          <p>Membangun array terurut dengan memasukkan satu elemen pada satu waktu ke posisi yang tepat.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(n²) - Efisien untuk data yang hampir terurut</p>
+          
+          <p class="font-semibold mt-4">4. Quick Sort (Advanced)</p>
+          <p>Memilih pivot, membagi array menjadi dua bagian, dan secara rekursif mengurutkan bagian kiri dan kanan.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(n log n) - Salah satu algoritma tercepat</p>
         </div>
         
         <h4 class="font-semibold text-lg mt-4 mb-2">🔍 Algoritma Searching</h4>
-        <p>Cara nyari data di dalam kumpulan data:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Linear Search:</strong> Cek satu-satu dari awal sampai ketemu</li>
-          <li><strong>Binary Search:</strong> Bagi 2 terus, cuma bisa di sorted array</li>
-          <li><strong>Hash Table:</strong> Direct access pake key, super fast!</li>
-        </ul>
+        <div class="bg-primary/10 p-4 rounded-lg">
+          <p><strong>Teknik untuk mencari data dalam kumpulan data:</strong></p>
+          
+          <p class="font-semibold mt-4">1. Linear Search</p>
+          <p>Mengecek satu per satu elemen dari awal sampai data ditemukan atau sampai akhir array.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(n) - Cocok untuk data tidak terurut</p>
+          
+          <p class="font-semibold mt-4">2. Binary Search</p>
+          <p>Membagi array menjadi dua bagian dan mencari di bagian yang sesuai. Hanya bisa digunakan pada array yang sudah terurut.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(log n) - Sangat efisien untuk data besar</p>
+          
+          <p class="font-semibold mt-4">3. Hash Table Search</p>
+          <p>Menggunakan fungsi hash untuk langsung mengakses data berdasarkan key.</p>
+          <p class="text-sm mt-1"><strong>Kompleksitas:</strong> O(1) - Paling cepat untuk data yang sudah di-hash</p>
+        </div>
         
-        <div class="bg-primary/10 p-4 rounded-lg mt-4">
-          <p class="font-semibold">🎮 Fun Fact: Game Development</p>
-          <p>Game favorit kalian pake struktur data ini:</p>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🎮 Aplikasi dalam Dunia Nyata</h4>
+        <div class="bg-secondary/10 p-4 rounded-lg">
+          <p class="font-semibold">Struktur data dan algoritma dalam aplikasi sehari-hari:</p>
           <ul class="list-disc list-inside space-y-1 mt-2">
-            <li><strong>Stack:</strong> Undo moves di Chess.com</li>
-            <li><strong>Queue:</strong> Matchmaking di Mobile Legends</li>
-            <li><strong>Array:</strong> Inventory system di Minecraft</li>
-            <li><strong>Graph:</strong> Path finding di Google Maps</li>
+            <li><strong>Social Media:</strong> Stack untuk undo post, Queue untuk feed timeline</li>
+            <li><strong>E-commerce:</strong> Array untuk product catalog, Hash table untuk user database</li>
+            <li><strong>Navigation Apps:</strong> Graph untuk road network, Dijkstra algorithm untuk shortest path</li>
+            <li><strong>Search Engines:</strong> Binary search untuk sorted data, Hash table untuk fast lookup</li>
+            <li><strong>Gaming:</strong> Stack untuk game states, Queue untuk multiplayer matchmaking</li>
+          </ul>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">📚 Kompetensi Kurikulum Merdeka</h4>
+        <div class="bg-accent/10 p-4 rounded-lg">
+          <p><strong>Berdasarkan KD 3.2 Menerapkan struktur data dan algoritma dalam pemecahan masalah:</strong></p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Memahami konsep dasar struktur data (Stack, Queue, Array)</li>
+            <li>Menerapkan algoritma sorting dan searching sederhana</li>
+            <li>Mengidentifikasi struktur data yang tepat untuk masalah tertentu</li>
+            <li>Menganalisis efisiensi algoritma berdasarkan kompleksitas waktu</li>
           </ul>
         </div>
       `
@@ -361,22 +352,23 @@ const Index = () => {
       title: "Flowchart & Pseudocode",
       emoji: "📊",
       content: `
-        <p><strong>Bikin roadmap sebelum coding, biar nggak bingung! 🗺️</strong></p>
+        <p><strong>Membuat roadmap dan blueprint sebelum coding! 🗺️</strong></p>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">📋 Flowchart Symbols</h4>
+        <h4 class="font-semibold text-lg mt-4 mb-2">📋 Simbol Flowchart Standar</h4>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-primary/10 p-3 rounded-lg">
-            <p><strong>🔵 Oval:</strong> Start/End</p>
-            <p><strong>📄 Rectangle:</strong> Process</p>
-            <p><strong>💎 Diamond:</strong> Decision (Yes/No)</p>
-            <p><strong>📂 Parallelogram:</strong> Input/Output</p>
+            <p><strong>🔵 Oval:</strong> Start/End (Mulai/Selesai)</p>
+            <p><strong>📄 Rectangle:</strong> Process (Proses)</p>
+            <p><strong>💎 Diamond:</strong> Decision (Keputusan Ya/Tidak)</p>
+            <p><strong>📂 Parallelogram:</strong> Input/Output (Masukan/Keluaran)</p>
+            <p><strong>🔗 Connector:</strong> Penghubung antar halaman</p>
           </div>
           <div class="bg-secondary/10 p-3 rounded-lg">
-            <p><strong>Example: Login System</strong></p>
+            <p><strong>Contoh: Sistem Login</strong></p>
             <p class="text-sm mt-2">
               START → Input Username → Input Password → 
-              Valid? → [Yes] Welcome → END<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ [No] Error Message → Input Username
+              Valid? → [Ya] Welcome → END<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ [Tidak] Error Message → Input Username
             </p>
           </div>
         </div>
@@ -396,24 +388,92 @@ const Index = () => {
             <p>&nbsp;&nbsp;ENDIF</p>
             <p>END</p>
           </div>
+          <p class="mt-2 text-sm"><strong>Keuntungan:</strong> Mudah dipahami, tidak bergantung pada bahasa pemrograman tertentu</p>
         </div>
         
-        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Project: Instagram Story Algorithm</h4>
+        <h4 class="font-semibold text-lg mt-4 mb-2">🎯 Project: Sistem Informasi Akademik</h4>
         <div class="bg-primary/10 p-4 rounded-lg">
-          <p class="font-semibold">Pseudocode untuk nentuin story mana yang ditampilin duluan:</p>
+          <p class="font-semibold">Flowchart untuk proses input nilai siswa:</p>
           <div class="bg-background p-3 rounded mt-2 font-mono text-xs">
-            <p>FOR each follower in user_following_list</p>
-            <p>&nbsp;&nbsp;IF follower has_active_story AND story_not_viewed</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;calculate_priority = (interaction_frequency * 0.4) + </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(recency_of_interaction * 0.3) +</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(mutual_friends * 0.2) +</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(story_posting_time * 0.1)</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;ADD to priority_queue</p>
-            <p>&nbsp;&nbsp;ENDIF</p>
-            <p>ENDFOR</p>
-            <p>SORT priority_queue by priority_score DESCENDING</p>
-            <p>DISPLAY stories in sorted order</p>
+            <p>START</p>
+            <p>↓</p>
+            <p>Input NIS Siswa</p>
+            <p>↓</p>
+            <p>Validasi NIS?</p>
+            <p>↓ [Ya]</p>
+            <p>Input Mata Pelajaran</p>
+            <p>↓</p>
+            <p>Input Nilai (0-100)</p>
+            <p>↓</p>
+            <p>Validasi Nilai?</p>
+            <p>↓ [Ya]</p>
+            <p>Simpan ke Database</p>
+            <p>↓</p>
+            <p>Hitung Rata-rata</p>
+            <p>↓</p>
+            <p>Tampilkan Hasil</p>
+            <p>↓</p>
+            <p>END</p>
           </div>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">🔧 Pseudocode untuk Sistem Nilai</h4>
+        <div class="bg-secondary/10 p-4 rounded-lg">
+          <p class="font-semibold">Algoritma untuk menghitung rata-rata dan menentukan kelulusan:</p>
+          <div class="bg-background p-3 rounded mt-2 font-mono text-xs">
+            <p>BEGIN</p>
+            <p>&nbsp;&nbsp;INPUT nilai_matematika, nilai_bahasa, nilai_inggris</p>
+            <p>&nbsp;&nbsp;rata_rata = (nilai_matematika + nilai_bahasa + nilai_inggris) / 3</p>
+            <p>&nbsp;&nbsp;IF rata_rata >= 75</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;status = "LULUS"</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Selamat! Anda lulus dengan rata-rata", rata_rata</p>
+            <p>&nbsp;&nbsp;ELSE</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;status = "TIDAK LULUS"</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Maaf, Anda tidak lulus. Rata-rata:", rata_rata</p>
+            <p>&nbsp;&nbsp;ENDIF</p>
+            <p>&nbsp;&nbsp;SAVE status, rata_rata to database</p>
+            <p>END</p>
+          </div>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">📱 Aplikasi Mobile: Kalkulator BMI</h4>
+        <div class="bg-accent/10 p-4 rounded-lg">
+          <p class="font-semibold">Flowchart untuk aplikasi kalkulator Body Mass Index:</p>
+          <div class="bg-background p-3 rounded mt-2 font-mono text-xs">
+            <p>START</p>
+            <p>↓</p>
+            <p>Input Berat Badan (kg)</p>
+            <p>↓</p>
+            <p>Input Tinggi Badan (m)</p>
+            <p>↓</p>
+            <p>BMI = Berat / (Tinggi × Tinggi)</p>
+            <p>↓</p>
+            <p>IF BMI < 18.5</p>
+            <p>&nbsp;&nbsp;Kategori = "Kurus"</p>
+            <p>ELSEIF BMI < 25</p>
+            <p>&nbsp;&nbsp;Kategori = "Normal"</p>
+            <p>ELSEIF BMI < 30</p>
+            <p>&nbsp;&nbsp;Kategori = "Gemuk"</p>
+            <p>ELSE</p>
+            <p>&nbsp;&nbsp;Kategori = "Obesitas"</p>
+            <p>ENDIF</p>
+            <p>↓</p>
+            <p>Display BMI dan Kategori</p>
+            <p>↓</p>
+            <p>END</p>
+          </div>
+        </div>
+        
+        <h4 class="font-semibold text-lg mt-4 mb-2">📚 Kompetensi Kurikulum Merdeka</h4>
+        <div class="bg-primary/10 p-4 rounded-lg">
+          <p><strong>Berdasarkan KD 3.3 Menerapkan flowchart dan pseudocode dalam perancangan algoritma:</strong></p>
+          <ul class="list-disc list-inside space-y-1 mt-2">
+            <li>Mengidentifikasi simbol flowchart yang tepat untuk setiap proses</li>
+            <li>Membuat flowchart yang logis dan sistematis</li>
+            <li>Menulis pseudocode yang jelas dan mudah dipahami</li>
+            <li>Mengkonversi flowchart menjadi pseudocode dan sebaliknya</li>
+            <li>Menerapkan flowchart dan pseudocode dalam pemecahan masalah</li>
+          </ul>
         </div>
       `
     }
