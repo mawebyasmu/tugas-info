@@ -98,6 +98,232 @@ const interactiveQuizData: QuizQuestion[] = [
       incorrect: "Cyberbullying itu selalu salah ya! Be a good digital citizen! 🌟"
     },
     points: 15
+  },
+  {
+    id: "q6",
+    type: "multiple-choice",
+    question: "Apa yang terjadi jika kita membuka email dari pengirim yang tidak dikenal?",
+    options: [
+      { value: "safe", label: "Aman, langsung buka attachment-nya" },
+      { value: "dangerous", label: "Berbahaya, bisa berisi virus atau phishing" },
+      { value: "fun", label: "Menyenangkan, pasti ada hadiah" },
+      { value: "normal", label: "Biasa saja, semua email aman" }
+    ],
+    correctAnswer: "dangerous",
+    feedback: {
+      correct: "Smart! 🚨 Email dari pengirim tidak dikenal bisa berisi malware atau phishing scam!",
+      incorrect: "Hati-hati! Email tidak dikenal bisa berbahaya. Jangan buka attachment sembarangan! 🛡️"
+    },
+    points: 12
+  },
+  {
+    id: "q7",
+    type: "fill-blank",
+    question: "Dalam algoritma pencarian, _____ adalah cara mencari data dengan memeriksa satu per satu, sedangkan _____ adalah cara mencari data yang sudah terurut.",
+    blanks: ["Linear Search", "Binary Search"],
+    correctAnswer: ["linear search", "binary search"],
+    feedback: {
+      correct: "Brilliant! 🔍 Linear search seperti mencari kunci di tas, binary search seperti mencari halaman di buku!",
+      incorrect: "Linear search = cek satu-satu, Binary search = cek tengah lalu buang setengah! 📖"
+    },
+    points: 18
+  },
+  {
+    id: "q8",
+    type: "true-false",
+    question: "Password yang kuat harus mengandung huruf besar, huruf kecil, angka, dan simbol khusus.",
+    options: [
+      { value: "true", label: "BENAR ✅" },
+      { value: "false", label: "SALAH ❌" }
+    ],
+    correctAnswer: "true",
+    feedback: {
+      correct: "Excellent! 🔐 Password kuat = kombinasi kompleks = sulit di-hack!",
+      incorrect: "Password '123456' itu lemah banget! Gunakan kombinasi kompleks ya! 💪"
+    },
+    points: 14
+  },
+  {
+    id: "q9",
+    type: "matching",
+    question: "Pasangkan jenis malware dengan ciri-cirinya:",
+    pairs: [
+      { left: "Virus", right: "Menyebar melalui file yang dijalankan" },
+      { left: "Worm", right: "Menyebar sendiri tanpa bantuan user" },
+      { left: "Trojan", right: "Menyamar sebagai program yang aman" }
+    ],
+    correctAnswer: ["Virus-Menyebar melalui file yang dijalankan", "Worm-Menyebar sendiri tanpa bantuan user", "Trojan-Menyamar sebagai program yang aman"],
+    feedback: {
+      correct: "Awesome! 🦠 Kamu paham betul jenis-jenis malware yang berbahaya!",
+      incorrect: "Virus butuh file, Worm mandiri, Trojan menyamar! Pelajari lagi ya! 📚"
+    },
+    points: 22
+  },
+  {
+    id: "q10",
+    type: "multiple-choice",
+    question: "Apa yang harus dilakukan jika komputer terkena virus?",
+    options: [
+      { value: "ignore", label: "Dibiarkan saja, nanti hilang sendiri" },
+      { value: "share", label: "Share ke teman-teman untuk diketahui" },
+      { value: "scan", label: "Scan dengan antivirus dan update sistem" },
+      { value: "delete", label: "Hapus semua file di komputer" }
+    ],
+    correctAnswer: "scan",
+    feedback: {
+      correct: "Perfect! 🛡️ Scan antivirus + update sistem = cara terbaik atasi virus!",
+      incorrect: "Jangan dibiarkan! Virus bisa merusak data. Segera scan dan update! 🚨"
+    },
+    points: 16
+  },
+  {
+    id: "q11",
+    type: "fill-blank",
+    question: "Dalam jaringan komputer, _____ adalah perangkat yang menghubungkan beberapa komputer, sedangkan _____ adalah perangkat yang mengarahkan data ke tujuan yang tepat.",
+    blanks: ["Switch", "Router"],
+    correctAnswer: ["switch", "router"],
+    feedback: {
+      correct: "Amazing! 🌐 Switch = hub lokal, Router = traffic controller internet!",
+      incorrect: "Switch untuk hub lokal, Router untuk arahkan data ke internet! 🌍"
+    },
+    points: 20
+  },
+  {
+    id: "q12",
+    type: "true-false",
+    question: "Menggunakan WiFi publik tanpa VPN itu aman karena sudah ada password.",
+    options: [
+      { value: "true", label: "BENAR ✅" },
+      { value: "false", label: "SALAH ❌" }
+    ],
+    correctAnswer: "false",
+    feedback: {
+      correct: "Smart! 🚫 WiFi publik tetap berbahaya meski ada password. Gunakan VPN!",
+      incorrect: "WiFi publik bisa di-sniff! Selalu gunakan VPN untuk keamanan! 🔒"
+    },
+    points: 13
+  },
+  {
+    id: "q13",
+    type: "multiple-choice",
+    question: "Apa yang dimaksud dengan 'phishing' dalam keamanan digital?",
+    options: [
+      { value: "fishing", label: "Kegiatan memancing ikan di laut" },
+      { value: "scam", label: "Penipuan untuk mencuri data pribadi" },
+      { value: "hacking", label: "Membobol sistem komputer" },
+      { value: "gaming", label: "Bermain game online" }
+    ],
+    correctAnswer: "scam",
+    feedback: {
+      correct: "Excellent! 🎣 Phishing = memancing korban dengan umpan palsu untuk curi data!",
+      incorrect: "Phishing bukan memancing ikan! Ini penipuan digital yang berbahaya! 🚨"
+    },
+    points: 15
+  },
+  {
+    id: "q14",
+    type: "matching",
+    question: "Cocokkan istilah keamanan digital dengan artinya:",
+    pairs: [
+      { left: "Firewall", right: "Tembok api yang memblokir serangan" },
+      { left: "Encryption", right: "Mengubah data menjadi kode rahasia" },
+      { left: "Backup", right: "Salinan data untuk keamanan" }
+    ],
+    correctAnswer: ["Firewall-Tembok api yang memblokir serangan", "Encryption-Mengubah data menjadi kode rahasia", "Backup-Salinan data untuk keamanan"],
+    feedback: {
+      correct: "Brilliant! 🔥 Firewall = pelindung, Encryption = pengaman, Backup = cadangan!",
+      incorrect: "Firewall = blokir serangan, Encryption = kode rahasia, Backup = salinan data! 🛡️"
+    },
+    points: 24
+  },
+  {
+    id: "q15",
+    type: "fill-blank",
+    question: "Dalam algoritma sorting, _____ adalah cara mengurutkan dengan membandingkan dan menukar elemen berdekatan, sedangkan _____ adalah cara mengurutkan dengan membagi data menjadi dua bagian.",
+    blanks: ["Bubble Sort", "Merge Sort"],
+    correctAnswer: ["bubble sort", "merge sort"],
+    feedback: {
+      correct: "Fantastic! 🫧 Bubble sort = gelembung naik, Merge sort = gabung dua bagian!",
+      incorrect: "Bubble sort = tukar berdekatan, Merge sort = bagi dan gabung! 📊"
+    },
+    points: 21
+  },
+  {
+    id: "q16",
+    type: "multiple-choice",
+    question: "Apa yang harus dilakukan jika menemukan konten tidak pantas di internet?",
+    options: [
+      { value: "share", label: "Share ke semua teman untuk diketahui" },
+      { value: "report", label: "Report ke platform dan jangan share" },
+      { value: "ignore", label: "Dibiarkan saja, bukan urusan kita" },
+      { value: "download", label: "Download untuk bukti" }
+    ],
+    correctAnswer: "report",
+    feedback: {
+      correct: "Perfect! 🚨 Report konten tidak pantas, jangan share yang bisa merugikan orang lain!",
+      incorrect: "Jangan share konten tidak pantas! Report saja ke platform yang bersangkutan! 🛡️"
+    },
+    points: 17
+  },
+  {
+    id: "q17",
+    type: "true-false",
+    question: "Menggunakan software bajakan itu tidak masalah karena gratis dan bisa hemat uang.",
+    options: [
+      { value: "true", label: "BENAR ✅" },
+      { value: "false", label: "SALAH ❌" }
+    ],
+    correctAnswer: "false",
+    feedback: {
+      correct: "Smart! ⚖️ Software bajakan = melanggar hukum dan tidak aman!",
+      incorrect: "Software bajakan ilegal dan berbahaya! Gunakan alternatif gratis yang legal! 🚫"
+    },
+    points: 14
+  },
+  {
+    id: "q18",
+    type: "fill-blank",
+    question: "Dalam database, _____ adalah kumpulan data yang saling berhubungan, sedangkan _____ adalah baris data dalam tabel.",
+    blanks: ["Database", "Record"],
+    correctAnswer: ["database", "record"],
+    feedback: {
+      correct: "Excellent! 🗄️ Database = gudang data, Record = satu baris data!",
+      incorrect: "Database = kumpulan data, Record = baris dalam tabel! 📋"
+    },
+    points: 19
+  },
+  {
+    id: "q19",
+    type: "multiple-choice",
+    question: "Apa yang dimaksud dengan 'cloud computing'?",
+    options: [
+      { value: "clouds", label: "Komputasi di awan yang tinggi" },
+      { value: "internet", label: "Layanan komputasi melalui internet" },
+      { value: "weather", label: "Prediksi cuaca dengan komputer" },
+      { value: "gaming", label: "Bermain game di langit" }
+    ],
+    correctAnswer: "internet",
+    feedback: {
+      correct: "Amazing! ☁️ Cloud computing = akses layanan komputer dari mana saja via internet!",
+      incorrect: "Cloud computing bukan di awan sungguhan! Ini layanan komputasi online! 🌐"
+    },
+    points: 16
+  },
+  {
+    id: "q20",
+    type: "matching",
+    question: "Pasangkan teknologi dengan manfaatnya:",
+    pairs: [
+      { left: "AI", right: "Membantu otomatisasi dan pengambilan keputusan" },
+      { left: "IoT", right: "Menghubungkan perangkat sehari-hari" },
+      { left: "Blockchain", right: "Mencatat transaksi dengan aman" }
+    ],
+    correctAnswer: ["AI-Membantu otomatisasi dan pengambilan keputusan", "IoT-Menghubungkan perangkat sehari-hari", "Blockchain-Mencatat transaksi dengan aman"],
+    feedback: {
+      correct: "Brilliant! 🤖 AI = otomatisasi, IoT = koneksi, Blockchain = keamanan!",
+      incorrect: "AI untuk otomatisasi, IoT untuk koneksi, Blockchain untuk keamanan! 🚀"
+    },
+    points: 25
   }
 ];
 
